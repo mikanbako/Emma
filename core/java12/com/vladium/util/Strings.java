@@ -254,11 +254,11 @@ abstract class Strings
             switch (c)
             {
                 case ' ':
-                    append.append ('\u00A0'); // don't use "&#160;": a waste of space
+                    append.append ("&nbsp;"); // don't use "&#160;": a waste of space
                     break;
                     
                 case '\t':
-                    append.append ("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"); // TODO: define a prop for this
+                    append.append ("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"); // TODO: define a prop for this
                     break;
                     
 //                case '-':
